@@ -1,0 +1,264 @@
+        :root {
+            --sidebar-color: #009be2;
+            --sidebar-text-color: #fff;
+            --main-bg-color: #d4d4d4;
+            --left-border-color: #ff9100;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: var(--sidebar-color);
+            color: var(--sidebar-text-color);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .nav-links,
+        .setting-links {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .filter-white-big {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        #dashboard-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-white-big,
+        .filter-white-small {
+            filter: brightness(0) invert(1);
+        }
+
+        .filter-white-small {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            width: 100%;
+            flex-direction: column;
+            background-color: var(--sidebar-text-color);
+        }
+
+        #header-line1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        #profile-icon+p {
+            font-weight: bold;
+        }
+
+        #search-icon,
+        #notification-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        #search-input {
+            flex: 1;
+            max-width: 600px;
+            padding: 5px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 16px;
+            background-color: var(--main-bg-color);
+        }
+
+        #notification-icon {
+            margin-right: 20px;
+        }
+
+        #profile-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        #header-line1-right {
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+            gap: 20px;
+        }
+
+        #header-line2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+        }
+
+        .account-holder {
+            display: flex;
+            align-items: center;
+            margin-right: 200px;
+        }
+
+        .account-holder img {
+            width: 75px;
+            height: 75px;
+            margin-right: 10px;
+        }
+
+        .account-holder-name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .account-holder-name span:first-child {
+            font-size: 14px;
+        }
+
+        .account-holder-name span:last-child {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: var(--sidebar-color);
+            color: var(--sidebar-text-color);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 25px;
+            padding: 25px;
+            background-color: var(--main-bg-color);
+        }
+
+        .projects {
+            /* grid-column: 1 / span 2; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 10px solid var(--left-border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icon-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .icon-footer img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .announcements {
+            /* grid-column: 3 / span 1; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .announcement-card {
+            background-color: var(--sidebar-text-color);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 12px;
+        }
+
+        .announcement-card>div {
+            margin-bottom: 15px;
+        }
+
+        .announcement-card>div:not(:last-child) {
+            border-bottom: 1px solid var(--main-bg-color);
+            padding-bottom: 10px;
+        }
+
+        .announcement-card h5 {
+            margin-top: 0;
+            margin-bottom: 3px;
+        }
+
+        .announcement-card p {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .trending-card {
+            background-color: var(--sidebar-text-color);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 12px;
+        }
+
+        .trending-card>div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .trending-card img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .other-accounts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card,
+        .announcement-card,
+        .trending-card {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.534);
+        }
